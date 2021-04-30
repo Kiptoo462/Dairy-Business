@@ -13,5 +13,38 @@
     <h1>Dairy Business</h1>
     <p>Dairy businesses all over the world must become more efficient than ever before. Dairies are employing an increasing number of people as they expand. Management personnel shifts from managing cows to accomplishing everything through their people. This increase in the workforce can wreak havoc on your dairy business if you don't have a system in place to organize people and processes. Additional complications can arise when we attempt to implement change in the form of new procedures or recommendations from our consultants.As a result the <em><strong>web application</strong></em> below is going  to help in milk production and sales.</p>
   </div>
+
+  <div class="daily-production">
+    <h1>Daily Milk Production Form</h1>
+    <p>Record daily milk production here:</p>
+    <form action="" name="daily-produce-form" method="post">
+      <label for="day">Select Day of the week:</label>
+      <select name="day" id="day">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+
+      <label for="shed-a">Shed A(litres):</label>
+      <input type="number" name="shed-a" id="shed-a">
+
+      <label for="shed-b">Shed B(litres):</label>
+      <input type="number" name="shed-b" id="shed-b">
+
+      <label for="shed-c">Shed C(litres):</label>
+      <input type="number" name="shed-c" id="shed-c">
+
+      <label for="shed-d">Shed D(litres):</label>
+      <input type="number" name="shed-d" id="shed-d">
+
+      <button type="submit">Record</button>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

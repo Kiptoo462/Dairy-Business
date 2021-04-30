@@ -7,7 +7,7 @@
 #home{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,4 +46,41 @@ margin-bottom: .5em;
   z-index: 1;
   line-height: 1.5;
   font-size: 1.4em;
+}
+
+.daily-production{
+  max-width: 65%;
+  margin: 2em auto;
+}
+
+.daily-production h1{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.daily-production p{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.daily-production form{
+  max-width: 100%;
+  margin: 0em auto;
+}
+
+.daily-production label{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.daily-production select{
+  width: 200px;
+}
+.daily-production input, .daily-production select, .daily-production button{
+  display: block;
+  height: 40px;
+  padding: .5em;
+  margin: .6em 0em;
+
 }
