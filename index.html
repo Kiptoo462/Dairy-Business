@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <title>Dairy-Busines</title>
+  <title>Dairy-Business</title>
 </head>
 <body>
   <div id="home">
@@ -15,35 +15,20 @@
   </div>
 
   <div class="daily-production">
-    <h1>Daily Milk Production Form</h1>
-    <p>Record daily milk production here:</p>
-    <form action="index.html" onsubmit="record();" name="daily-produce-form" method="post">
-      <label for="day">Select Day of the week:</label>
-      <select name="day" id="day" required>
-        <option value="Monday">Monday</option>
-        <option value="Tuesday">Tuesday</option>
-        <option value="Wednesday">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="Friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-      </select>
+    <h1>Daily Milk Production</h1>
+    <p>Report on milk production per shed and the total:</p>
 
-      <label for="shed-a">Shed A(litres):</label>
-      <input type="number" name="shed-a" id="shed-a" required>
+    <button onclick="totalProduction();">Generate Report</button>
 
-      <label for="shed-b">Shed B(litres):</label>
-      <input type="number" name="shed-b" id="shed-b" required>
-
-      <label for="shed-c">Shed C(litres):</label>
-      <input type="number" name="shed-c" id="shed-c" required>
-
-      <label for="shed-d">Shed D(litres):</label>
-      <input type="number" name="shed-d" id="shed-d" required>
-
-      <button type="submit">Record</button>
-    </form>
-  </div>
+    <div class="report">
+      <p>Your production in Shed A is <span id="shedA"></span> litres per day</p>
+      <p>Your production in Shed B is <span id="shedB"></span> litres per day</p>
+      <p>Your production in Shed C is <span id="shedC"></span> litres per day</p>
+      <p>Your production in Shed D is <span id="shedD"></span> litres per day</p>
+      <p>The total production is <span id="total"></span> litres per day</p>
+    </div>
+    </div>
+    
 
   <script src="js/main.js"></script>
 </body>

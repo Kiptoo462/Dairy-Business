@@ -84,3 +84,10 @@ margin-bottom: .5em;
   margin: .6em 0em;
 
 }
+
+.report{
+  border: 2px solid #333;
+  border-radius: 1em;
+  padding: 2em;
+
+}
