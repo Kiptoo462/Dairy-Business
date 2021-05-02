@@ -4,10 +4,12 @@ const shedB = 308;
 const shedC = 486;
 const shedD = 572;
 
+let totalProduce = 0;
+
 //total amount of milk of all the sheds
 
  let totalProduction = function () {
-    let totalProduce = shedA + shedB + shedC + shedD;
+    totalProduce = shedA + shedB + shedC + shedD;
 
     document.getElementById("shedA").innerHTML = shedA;
     document.getElementById("shedB").innerHTML = shedB;
@@ -24,13 +26,13 @@ let incomeOverTime = function (selling, time) {
   let incomePerYear = 0;
   if (time == 'week'){
     days = 7;
-    incomePerWeek = averagePerDay() * selling * days;
-    console.log('Your weekly income will be ksh ' + incomePerWeek);
+    incomePerWeek = totalProduce * selling * days;
+    document.getElementById("weeklyIncome").innerHTML = incomePerWeek;
   }
   else if (time =='year'){
     days = 365;
-    incomePerYear = averagePerDay() * selling * days;
-    console.log('Your yearly income will be ksh ' + incomePerYear);
+    incomePerYear = totalProduce * selling * days;
+    document.getElementById("yearlyIncome").innerHTML = incomePerYear;
   
   }
   else { 
