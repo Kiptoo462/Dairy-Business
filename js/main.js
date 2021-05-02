@@ -136,10 +136,17 @@ let getIncomePerMonth = function () {
 
  
 let getNewIncomePerMonth = function () {
+  var container = document.getElementById('newIncomePerMonth');
   for( i = 0; i<12; i++) {
-    month[i].newIncome = 49.60 * averagePerDay() * month[i].days;
-    console.log( 'your new income for ' + month[i].name + ' is ' + month[i].newIncome);
-    console.log( ' The diffrence in income is ' + ( month[1].newIncome - month[i].income));
+    var paragraph = document.createElement('p');
+    var paragraph2 = document.createElement('p');
+    month[i].newIncome = Math.ceil(49.60 * totalProduce * month[i].days);
+    paragraph.textContent = 'your new income for ' + month[i].name + ' is ' + month[i].newIncome;
+    paragraph2.textContent =' The diffrence in income is ' + ( month[1].newIncome - month[i].income);
+   container.append(paragraph);
+   container.append(paragraph2);
   }
 }
  
+
+
