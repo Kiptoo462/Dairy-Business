@@ -121,11 +121,18 @@ var month = [
 ];
 
 let getIncomePerMonth = function () {
+
+  var container = document.getElementById("incomePerMonth");
+
   for( i = 0; i<12; i++) {
-    month[i].income = 45 * averagePerDay() * month[i].days;
-    console.log('Your income for ' + month[i].name + ' is ' + month[i].income );
+    month[i].income = 45 * totalProduce * month[i].days;
+    var paragraph=document.createElement('p');
+    paragraph.textContent = "Your income for " + month[i].name + " is " + month[i].income;
+    container.append(paragraph);
   }
-}
+  
+ }
+
 
  
 let getNewIncomePerMonth = function () {
