@@ -17,9 +17,9 @@
   <div class="daily-production">
     <h1>Daily Milk Production Form</h1>
     <p>Record daily milk production here:</p>
-    <form action="" name="daily-produce-form" method="post">
+    <form action="index.html" onsubmit="record();" name="daily-produce-form" method="post">
       <label for="day">Select Day of the week:</label>
-      <select name="day" id="day">
+      <select name="day" id="day" required>
         <option value="Monday">Monday</option>
         <option value="Tuesday">Tuesday</option>
         <option value="Wednesday">Wednesday</option>
@@ -30,16 +30,16 @@
       </select>
 
       <label for="shed-a">Shed A(litres):</label>
-      <input type="number" name="shed-a" id="shed-a">
+      <input type="number" name="shed-a" id="shed-a" required>
 
       <label for="shed-b">Shed B(litres):</label>
-      <input type="number" name="shed-b" id="shed-b">
+      <input type="number" name="shed-b" id="shed-b" required>
 
       <label for="shed-c">Shed C(litres):</label>
-      <input type="number" name="shed-c" id="shed-c">
+      <input type="number" name="shed-c" id="shed-c" required>
 
       <label for="shed-d">Shed D(litres):</label>
-      <input type="number" name="shed-d" id="shed-d">
+      <input type="number" name="shed-d" id="shed-d" required>
 
       <button type="submit">Record</button>
     </form>
