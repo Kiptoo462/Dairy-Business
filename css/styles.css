@@ -93,10 +93,11 @@ margin-bottom: .5em;
   margin: 2em auto;
 }
 button{
+  font-size: 1.2em;
   background-color: black;
   color: white;
   font-weight: 700;
-  width: 200px;
+  width: 300px;
   border-radius: 0.5em;
 }
 
