@@ -121,3 +121,11 @@ var month = [
   income : 0
  },
 ];
+
+let getIncomePerMonth = function () {
+  for( i = 0; i<12; i++) {
+    month[i].income = 45 * averagePerDay() * month[i].days;
+    console.log('Your income for ' + month[i].name + ' is ' + month[i].income ) 
+  }
+}
+getIncomePerMonth();
