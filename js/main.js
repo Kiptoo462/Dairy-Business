@@ -142,7 +142,7 @@ let getNewIncomePerMonth = function () {
     var paragraph2 = document.createElement('p');
     month[i].newIncome = Math.ceil(49.60 * totalProduce * month[i].days);
     paragraph.textContent = 'Your new income for ' + month[i].name + ' is ' + month[i].newIncome;
-    paragraph2.textContent =' The difference in income is ' + ( month[1].newIncome - month[i].income);
+    paragraph2.textContent =' The difference in income is ' + ( month[i].newIncome - month[i].income);
    container.append(paragraph);
    container.append(paragraph2);
   }
